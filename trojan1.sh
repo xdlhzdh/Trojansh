@@ -70,7 +70,7 @@ systemctl stop nginx
 	 blue "本VPS的IP为 $local_addr"
 	green "==================================="
 	sleep 3s
-if [ $real_addr == $local_addr ] ; then
+if [ "$real_addr" == "$local_addr" ] ; then
 	green " "
 	green " "
 	green "=========================================="
